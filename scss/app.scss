@@ -61,7 +61,7 @@
 
 @mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
   background: {
-    image: url($imgpath);
+    image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url($imgpath);
     position: $position;
     repeat: $repeat;
   }
@@ -78,12 +78,12 @@
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 35px;
-    border-color: red;
+    border-color: #FE4E50;
     background-color:white;
-    color:red;
+    color:#FE4E50;
     &.filled{
       color:white;
-      background-color:red;
+      background-color:#FE4E50;
     }
   }
   &.redcurved:hover{
@@ -231,8 +231,12 @@ h5{
 .footer{
   hr{
     width:100vw;
-    color: red;
-    background: red;
   }
 
+  .separator-red{
+    width:150%;
+    background: #fe4e50;
+    height: 2px;
+    border-style: solid;
+  }
 }

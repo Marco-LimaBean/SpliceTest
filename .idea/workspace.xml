@@ -2,148 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f08da39-6ebe-40c8-80d3-f1b182fdb53f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/._.DS_Store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/._Assets" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/._Dreamshare.sketch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/._Dreamshare_desktop.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/._Fonts &amp; Colours.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets.7z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dreamshare.sketch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dreamshare_desktop.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fonts &amp; Colours.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._block1Sports.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._block2Wellness.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._block3Expeditions.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._block4Games.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._block5Culture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._block6Beauty.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._block7Travelling.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._headerBackground.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._partner1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._partner2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._partner3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._partner4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/block1Sports.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/block2Wellness.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/block3Expeditions.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/block4Games.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/block5Culture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/block6Beauty.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/block7Travelling.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/headerBackground.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/partner1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/partner2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/partner3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/partner4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preview/page-1-dreamshare_desktop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/._index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Sketch.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.node-version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.npm-version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._airplane.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._brush.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._camera.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/._music.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/airplane.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/brush.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/camera.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/music.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/_global.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_accordion-menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_accordion.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_badge.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_breadcrumbs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_button-group.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_callout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_card.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_close-button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_drilldown.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_dropdown-menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_dropdown.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_flex-video.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_flex.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_float.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_label.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_media-object.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_menu-icon.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_off-canvas.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_orbit.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_pagination.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_progress-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_responsive-embed.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_reveal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_slider.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_sticky.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_switch.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_table.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_tabs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_thumbnail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_title-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_tooltip.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_top-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/components/_visibility.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_checkbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_error.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_fieldset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_forms.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_help-text.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_input-group.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_label.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_meter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_progress.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_range.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_select.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/forms/_text.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/foundation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_classes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_column.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_flex-grid.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_grid.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_gutter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_position.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_row.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/grid/_size.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/settings/_settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/typography/_alignment.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/typography/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/typography/_helpers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/typography/_print.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/typography/_typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_breakpoint.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_color.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_flex.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_math.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_selector.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_unit.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_util.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/foundation/util/_value.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intro.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/links/._page-1-dreamshare_desktop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/links/page-1-dreamshare_desktop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.scss" afterPath="$PROJECT_DIR$/scss/app.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -174,21 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="139" column="16" lean-forward="false" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+            <state relative-caret-position="331">
+              <caret line="145" column="24" lean-forward="true" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="114" column="9" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+            <state relative-caret-position="243">
+              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -197,7 +58,7 @@
       <file leaf-file-name="_settings.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
+            <state relative-caret-position="12461">
               <caret line="781" column="22" lean-forward="false" selection-start-line="781" selection-start-column="17" selection-end-line="781" selection-end-column="22" />
               <folding />
             </state>
@@ -245,8 +106,8 @@
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/scss/_settings.scss" />
         <option value="$PROJECT_DIR$/css/app.css" />
-        <option value="$PROJECT_DIR$/scss/app.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scss/app.scss" />
       </list>
     </option>
   </component>
@@ -354,7 +215,7 @@
       <updated>1504508876922</updated>
       <workItem from="1504508880650" duration="53000" />
       <workItem from="1504510218177" duration="21678000" />
-      <workItem from="1504589091519" duration="7303000" />
+      <workItem from="1504589091519" duration="10087000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize">
       <created>1504596865091</created>
@@ -377,11 +238,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504596963949</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initialize">
+      <created>1504597096953</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1504597096953</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29034000" />
+    <option name="totallyTimeSpent" value="31818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="121" width="1382" height="744" extended-state="6" />
@@ -389,8 +257,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -402,7 +271,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -492,6 +360,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -507,6 +376,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -514,6 +384,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="984" lean-forward="false" selection-start-line="8" selection-start-column="984" selection-end-line="8" selection-end-column="984" />
+          <folding>
+            <marker date="1504510579242" expanded="true" signature="118167:118181" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="118303:118317" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="118655:118668" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="119054:119067" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="119177:119190" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="119298:119311" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="119420:119433" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="131182:131268" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="133533:133544" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="134292:134378" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="134392:134424" ph="..." />
+            <marker date="1504510579242" expanded="true" signature="154452:154456" ph="&lt;" />
+            <marker date="1504510579242" expanded="true" signature="154763:154767" ph="&gt;" />
+            <marker date="1504510579242" expanded="true" signature="155138:155142" ph="&lt;" />
+            <marker date="1504510579242" expanded="true" signature="155295:155299" ph="&gt;" />
+            <marker date="1504510579242" expanded="true" signature="155670:155674" ph="&lt;" />
+            <marker date="1504510579242" expanded="true" signature="155797:155801" ph="&gt;" />
+            <marker date="1504510579242" expanded="true" signature="163393:163436" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,6 +411,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -528,14 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -567,9 +450,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="145" column="24" lean-forward="true" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="12461">
           <caret line="781" column="22" lean-forward="false" selection-start-line="781" selection-start-column="17" selection-end-line="781" selection-end-column="22" />
           <folding />
         </state>
@@ -577,16 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="114" column="9" lean-forward="false" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="139" column="16" lean-forward="false" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+        <state relative-caret-position="243">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding />
         </state>
       </provider>
