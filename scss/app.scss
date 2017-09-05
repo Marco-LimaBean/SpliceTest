@@ -72,6 +72,9 @@
   @include background('/assets/headerBackground.jpg');
 }
 
+.theme-color{
+  color: #FE4E50;
+}
 
 .button{
   &.redcurved {
@@ -228,7 +231,7 @@ h5{
   }
 }
 
-.footer{
+footer{
   hr{
     width:100vw;
   }
@@ -238,5 +241,10 @@ h5{
     background: #fe4e50;
     height: 2px;
     border-style: solid;
+  }
+
+  .footer-item{
+    color: #C2C2C2;
+    font-weight: lighter;
   }
 }
