@@ -5,6 +5,10 @@
 @import 'motion-ui';
 
 
+// Font icons
+@import "fonts";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 @include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
@@ -55,8 +59,11 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+/*
+ * END OF FOUNDATION GENERATED
+ */
 
-//my stuff.
+// mixin
 
 
 @mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
@@ -68,12 +75,22 @@
   background-size: cover;
 }
 
+@mixin block-background ($imgpath){
+  background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
+  background-size: cover;
+
+  &:hover{
+    background: url($imgpath);
+    background-size: cover;
+  }
+}
+
 .homehead {
   @include background('/assets/headerBackground.jpg');
 }
 
-.theme-color{
-  color: #FE4E50;
+.theme-color{ //to change text to theme color
+  color: $themecolor;
 }
 
 .button{
@@ -81,16 +98,17 @@
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 35px;
-    border-color: #FE4E50;
+    border-color: $themecolor;
     background-color:white;
-    color:#FE4E50;
+    color: $themecolor;
     &.filled{
       color:white;
-      background-color:#FE4E50;
+      background-color:$themecolor;
     }
   }
   &.redcurved:hover{
-    font-size:1em;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
   }
 }
 
@@ -101,22 +119,63 @@
   color:$white;
 }
 
+.title-bar{
+  background-color: darken($themecolor, 5%);
+  .title-bar-title{
+    width:100%
+  }
+}
+
 .top-bar{
   background: none;
   color:white;
+  text-align: center;
   ul{
     background: none;
     color:white;
     li {
+      height: 2.5em;
       a {
+        display: inline;
+        background: none;
         color: $topbar-link-color;
+
+        border: solid transparent;
+        padding: 0.4rem;
+        -webkit-border-radius: 1.4rem;
+        -moz-border-radius: 1.4rem;
+        border-radius: 1.4rem;
         &:hover {
           border: solid white;
-          -webkit-border-radius: 25px;
-          -moz-border-radius: 25px;
-          border-radius: 25px;
         }
       }
+    }
+  }
+
+  .top-bar-right{
+    padding-top: 1%;
+    padding-right: 10%;
+    padding-left: 5%;
+  }
+
+  .top-bar-left{
+
+    @media screen and (max-width: 45em){
+      //above for mobile screen
+      ul{
+        margin: auto;
+        li{
+          width: 100%;
+        }
+      }
+      margin: auto;
+    }
+
+    margin-top: 10px;
+    font-size: 1.5em;
+    a:hover{
+      border: solid transparent;
+      color: $themecolor;
     }
   }
 }
@@ -130,16 +189,60 @@
   min-height: 100vh;
 }
 
-h5{
-  font-family: 'Arial Narrow',serif;
-  color: lightgray;
-}
-
 .partner-body{
   padding-top: 3vh;
 
+  h5{
+    font-weight: lighter;
+    color: lightgray;
+  }
+
+  p {
+    color:$grey;
+  }
+
   .partner-mainheading{
     padding-bottom: 3vh;
+  }
+
+  .partner-image{
+    position: relative;
+    display: inline-block;
+    img{
+      background-size: auto;
+      height: 122px;
+      width: 122px;
+      margin: auto;
+      border-radius: 64px 64px 64px 64px;
+    }
+    &:after { //note any changes will affect all partner icons
+      font-family: 'fontello';
+      font-size: 1.2em;
+      color: white;
+      height: 37px;
+      width: 37px;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      border-radius: 18px;
+      border: 3px solid white;
+    }
+    &.art:after {
+        content: '\e800'; //find all codes in css/fontello.css end.
+        background-color: $green;
+    }
+    &.photography:after{
+        content: '\e801';
+        background-color: $orange;
+    }
+    &.music:after {
+        content: '\e802';
+        background-color: $themecolor;
+    }
+    &.travel:after{
+        content: '\e803';
+        background-color: $purple;
+    }
   }
 
   .partner-footer{
@@ -147,18 +250,12 @@ h5{
   }
 }
 
-.round-image{
-  border-radius: 64px 64px 64px 64px;
-}
-
-.panel{
-  p {
-    color:grey;
-  }
-}
-
 .holiday{
   padding-top: 3vh;
+
+  .columns{
+    padding: 10px;
+  }
 
   h3{
     text-align: center;
@@ -173,7 +270,7 @@ h5{
     fill: 100%;
   }
 
-  .holiday-image{
+  .holiday-image {
     background-position: center top;
     width: 100%;
     height: 350px;
@@ -181,45 +278,37 @@ h5{
     text-align: center;
     border-radius: 5px 5px 5px 5px;
 
-    &.white-text{
-      color:white;
+    &.white-text {
+      color: white;
     }
   }
 
-  #image1{
-    //background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(); //darken overlay.
-    background: url('/assets/block1Sports.jpg');
-    background-size: cover;
+  #sports-image{
+    @include block-background('/assets/block1Sports.jpg');
   }
 
-  #image2{
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/assets/block2Wellness.jpg'); //darken overlay.
-    background-size: cover;
+  #wellnessandhealth-image{
+    @include block-background('/assets/block2Wellness.jpg');
   }
 
-  #image3{
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/assets/block3Expeditions.jpg'); //darken overlay.
-    background-size: cover;
+  #expeditions-image{
+    @include block-background('/assets/block3Expeditions.jpg');
   }
 
-  #image4{
-    background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.3)), url('/assets/block4Games.jpg'); //darken overlay.
-    background-size: cover;
+  #games-image {
+    @include block-background('/assets/block4Games.jpg');
   }
 
-  #image5{
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('/assets/block5Culture.jpg'); //darken overlay.
-    background-size: cover;
+  #culureandeducation-image{
+    @include block-background('/assets/block5Culture.jpg');
   }
 
-  #image6{
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/assets/block6Beauty.jpg'); //darken overlay.
-    background-size: cover;
+  #beautyandrelaxation-image{
+    @include block-background('/assets/block6Beauty.jpg');
   }
 
-  #image7{
-    background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.3)), url('/assets/block7Travelling.jpg'); //darken overlay.
-    background-size: cover;
+  #travelling-image{
+    @include block-background('/assets/block7Travelling.jpg');
   }
 
   .small-4{
@@ -232,13 +321,14 @@ h5{
 }
 
 footer{
-  hr{
-    width:100vw;
+
+  .row{
+    padding-top: 1em;
   }
 
   .separator-red{
-    width:150%;
-    background: #fe4e50;
+    width:100vw;
+    background: $themecolor;
     height: 2px;
     border-style: solid;
   }
@@ -246,5 +336,24 @@ footer{
   .footer-item{
     color: #C2C2C2;
     font-weight: lighter;
+
+    h5{
+      color: black;
+      font-weight: bold;
+    }
+
+    .text-theme{
+      color: $themecolor;
+      a{
+        color: $themecolor;
+      }
+    }
+
+    a {
+      color: $grey;
+      &:hover{
+        color: $themecolor;
+      }
+    }
   }
 }

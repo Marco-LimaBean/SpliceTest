@@ -59,6 +59,7 @@
 //  54. Tooltip
 //  55. Top Bar
 //  56. Xy Grid
+//  57. Theme Specific
 
 @import 'util/util';
 
@@ -82,7 +83,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Monsterrat', Roboto, Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -859,3 +860,12 @@ $grid-margin-gutters: (
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $block-grid-max: 8;
+
+
+// 57. Theme specific
+$themecolor: #FE4E50;
+$green: #18D4CA;
+$orange: #FFA710;
+$purple: #667DF3;
+$darkgrey: #444444;
+$grey: #666666;
