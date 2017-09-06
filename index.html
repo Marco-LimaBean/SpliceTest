@@ -4,39 +4,49 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FE4E50">
+    <link rel="icon" sizes="192x192" href="assets/logo.svg">
     <title>DREAMSHARE</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
       <header class="grid-x grid-padding-x homehead">
+
+
         <div class="large-12 cell fullpage">
-            <div class="sticky-container main-home">
-              <nav class="top-bar">
-                <div class="top-bar-left">
-                  <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="menu-text">DREAMSHARE</li>
-                  </ul>
-                </div>
-                <div class="top-bar-right">
-                  <ul class="dropdown vertical medium-horizontal menu">
-                    <li class="dropdown"><a href="#"> Activities </a></li>
-                    <li class="dropdown"><a href="#"> Partners </a></li>
-                    <li class="dropdown"><a href="#"> Blog </a></li>
-                    <li class="dropdown"><a href="#"> Contact </a></li>
-                    <li class="dropdown"><a href="#"> Log in </a></li>
-                    <li class="dropdown"><a href="#"> Sign up </a></li>
-                  </ul>
-                </div>
-              </nav>
+
+          <!-- navigation start -->
+          <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="example-menu" aria-hidden="true"></button>
+            <div class="title-bar-title" data-toggle="example-menu">Menu</div>
+          </div>
+
+          <nav class="top-bar" id="example-menu">
+            <div class="top-bar-left">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text"><a href="http://dev.splicetest.com/">DREAMSHARE</a></li>
+              </ul>
             </div>
-            <!-- end of navigation -->
+            <div class="top-bar-right">
+              <ul class="menu vertical dropdown medium-horizontal extends" data-auto-height="true" data-animate-height="true">
+                <li><a href="#"> Activities </a></li>
+                <li><a href="#"> Partners </a></li>
+                <li><a href="#"> Blog </a></li>
+                <li><a href="#"> Contact </a></li>
+                <li><a href="#"> Log in </a></li>
+                <li><a href="#"> Sign up </a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- navigation end -->
 
           <!-- center start -->
-            <div class="container-center">
-              <h2> SHARE YOUR <br> HOLIDAY DREAM</h2><br>
-              <h5> And find the perfect partner to fulfill it</h5><br>
-              <a href="#"> <button class="button redcurved filled"> Find your holiday partner </button> </a>
-            </div>
+          <div class="container-center">
+            <h2> SHARE YOUR <br> HOLIDAY DREAM</h2><br>
+            <h5> And find the perfect partner to fulfill it</h5><br>
+            <a class="button redcurved filled" href="#"> Find your holiday partner </a>
+          </div>
+          <!-- center end -->
 
         </div>
       </header>
@@ -49,36 +59,44 @@
           </div>
         </header>
         <div class="row">
-          <div class="small-3 columns text-center">
+          <div class="small-12 medium-4 large-3 columns text-center">
             <div class="panel">
-              <img class="round-image" src="assets/partner1.jpg" height="126" width="126">
+              <div class="partner-image music">
+                <img class="partner-image" src="assets/partner1.jpg" alt="Portrait of Bradley Hunter">
+              </div>
               <h4> Bradley Hunter</h4>
               <p>
                 Based in Chicago. I love playing tennis and loud music.
               </p>
             </div>
           </div>
-          <div class="small-3 columns text-center">
+          <div class="small-12 medium-4 large-3 columns text-center">
             <div class="panel">
-              <img class="round-image" src="assets/partner2.jpg">
+              <div class="partner-image art">
+                <img class="partner-image" src="assets/partner2.jpg" alt="Portrait of  Marie Bennett"></div>
               <h4> Marie Bennett</h4>
               <p>
                 Currently living in Colorado. lover of art, languages and travelling.
               </p>
             </div>
           </div>
-          <div class="small-3 columns text-center">
+          <div class="small-12 medium-4 large-3 columns text-center">
             <div class="panel">
-              <img class="round-image" src="assets/partner3.jpg">
+              <div class="partner-image photography">
+                <img class="partner-image" src="assets/partner3.jpg" alt="Portrait of Diane Wells">
+              </div>
               <h4> Diane Wells</h4>
+              <i class="music"></i>
               <p>
                 Living in Athens, Greece. I love black and white classics, chillout music and green tea.
               </p>
             </div>
           </div>
-          <div class="small-3 columns text-center">
+          <div class="small-12 medium-4 end large-3 columns text-center">
             <div class="panel">
-              <img class="round-image" src="assets/partner4.jpg">
+              <div class="partner-image travel">
+                <img class="partner-image" src="assets/partner4.jpg" alt="Portrait of Christopher Pierce">
+              </div>
               <h4> Christopher Pierce</h4>
               <p>
                 Star Wars fanatic. I have persistent enthusiasm to create new things.
@@ -90,7 +108,7 @@
         <footer class="partner-footer">
           <div class="row">
             <div class="small-12 columns text-center">
-              <button class="button redcurved">See other partners</button>
+              <a class="button redcurved">See other partners</a>
             </div>
           </div>
         </footer>
@@ -102,139 +120,103 @@
         </header>
 
         <div class="row">
-          <div class="small-4 columns">
-            <a href="#"><button class="text-center holiday-image" id="image1"><h4> Sports </h4></button></a>
-
+          <div class="small-6 medium-4 columns">
+            <a href="#"><button class="text-center holiday-image" id="sports-image"><h4> Sports </h4></button></a>
           </div>
-          <div class="small-4 columns">
-            <a href="#"><button class="text-center holiday-image white-text" id="image2"><h4> Wellness and Health </h4></button></a>
+          <div class="small-6 medium-4 columns">
+            <a href="#"><button class="text-center holiday-image white-text" id="wellnessandhealth-image"><h4> Wellness and Health </h4></button></a>
           </div>
-          <div class="small-4 columns">
-            <a href="#"><button class="text-center holiday-image white-text" id="image3"><h4> Expeditions </h4></button></a>
+          <div class="small-6 medium-4 columns">
+            <a href="#"><button class="text-center holiday-image white-text" id="expeditions-image"><h4> Expeditions </h4></button></a>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="small-4 columns">
-            <a href="#"><button class="text-center holiday-image white-text" id="image4"><h4> Games </h4></button></a>
+          <div class="small-6 medium-4 columns">
+            <a href="#"><button class="text-center holiday-image white-text" id="games-image"><h4> Games </h4></button></a>
           </div>
-          <div class="small-8 columns">
-            <a href="#"><button class="text-center holiday-image white-text" id="image5"><h4> Culture and Education </h4></button></a>
+          <div class="small-12 medium-8 columns">
+            <a href="#"><button class="text-center holiday-image white-text" id="culureandeducation-image"><h4> Culture and Education </h4></button></a>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="small-8 columns">
-             <a href="#"><button class="text-center holiday-image white-text" id="image6"><h4> Beauty and Relaxation </h4></button></a>
+          <div class="small-12 medium-8 columns">
+             <a href="#"><button class="text-center holiday-image white-text" id="beautyandrelaxation-image"><h4> Beauty and Relaxation </h4></button></a>
           </div>
-          <div class="small-4 columns">
-            <a href="#"><button class="text-center holiday-image white-text" id="image7"><h4> Travelling </h4></button></a>
+          <div class="small-12 medium-4 end columns">
+            <a href="#"><button class="text-center holiday-image white-text" id="travelling-image"><h4> Travelling </h4></button></a>
           </div>
-
         </div>
       </section>
 
       <footer>
         <hr class="separator-red">
-        <div class="row">
-          <div class="small-3 columns theme-color">
-            DREAMSHARE
-          </div>
-          <div class="small-3 columns">
-            <b> Company </b>
-          </div>
-          <div class="small-3 columns">
-            <b> Activities </b>
-          </div>
-          <div class="small-3 columns">
-            <b> Contact Us </b>
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-          <div class="small-3 columns footer-item">
-            About
-          </div>
-          <div class="small-3 columns footer-item">
-            Sports
-          </div>
-          <div class="small-3 columns footer-item">
-            Tel: (000) 000-0000
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-          <div class="small-3 columns footer-item">
-            Contact
-          </div>
-          <div class="small-3 columns footer-item">
-            Wellness and Health
-          </div>
-          <div class="small-3 columns footer-item">
-            Email: dreamshare@email.com
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-          <div class="small-3 columns footer-item">
-            Press
-          </div>
-          <div class="small-3 columns footer-item">
-            Expeditions
-          </div>
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-          <div class="small-3 columns footer-item">
-            Blog
-          </div>
-          <div class="small-3 columns footer-item">
-            Games
-          </div>
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-          <div class="small-3 columns footer-item">
-            Terms and privacy
-          </div>
-          <div class="small-3 columns footer-item">
-            Culture
-          </div>
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-          <div class="small-3 columns footer-item">
-            Help
-          </div>
-          <div class="small-3 columns footer-item theme-color">
-            View All
-          </div>
-          <div class="small-3 columns footer-item">
-            <!--empty-->&nbsp;
-          </div>
-        </div>
 
+        <div class="row">
+          <div class="small-12 medium-12 large-3 columns theme-color">
+              DREAMSHARE
+          </div>
+          <div class="small-12 medium-12 large-3 columns footer-item">
+            <div class="row">
+              <div class="small-12 columns">
+                  <h5>Company</h5>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">About</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Contact</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Press</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Blog</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Terms and Privacy</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Help</a>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-12 large-3 columns footer-item">
+            <div class="row">
+              <div class="small-12 columns">
+                  <h5>Activities</h5>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Sports</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Wellness and Health</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Expeditions</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Games</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="#">Culture and Education</a>
+              </div>
+              <div class="small-12 columns text-theme">
+                <a href="#">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="small-12 medium-12 large-3 columns footer-item">
+            <div class="row">
+              <div class="small-12 columns">
+                <h5>Contact Us</h5>
+              </div>
+              <div class="small-12 columns">
+                <a href="tel:0000000000"> Tel: (000) 000-0000</a>
+              </div>
+              <div class="small-12 columns">
+                <a href="mailto:dreamshare@email.com"> Email: dreamshare@email.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
       </footer>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -80,6 +80,7 @@
   background-size: cover;
 
   &:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
     background: url($imgpath);
     background-size: cover;
   }
@@ -120,6 +121,12 @@
 }
 
 .title-bar{
+
+  @media screen and (min-width: 45em){
+    //fixes flashing of menu bar on page load.
+    display:none;
+  }
+
   background-color: darken($themecolor, 5%);
   .title-bar-title{
     width:100%
@@ -127,30 +134,49 @@
 }
 
 .top-bar{
-  background: none;
-  color:white;
-  text-align: center;
-  ul{
-    background: none;
-    color:white;
-    li {
-      height: 2.5em;
-      a {
-        display: inline;
-        background: none;
-        color: $topbar-link-color;
 
-        border: solid transparent;
-        padding: 0.4rem;
-        -webkit-border-radius: 1.4rem;
-        -moz-border-radius: 1.4rem;
-        border-radius: 1.4rem;
-        &:hover {
-          border: solid white;
+  @media screen and (min-width: 40em) {
+    background: none;
+    color: white;
+    text-align: center;
+    ul {
+      background: none;
+      color: white;
+      li {
+        height: 2.5em;
+        a {
+          display: inline;
+          background: none;
+          color: $topbar-link-color;
+
+          border: solid transparent;
+          padding: 0.4rem;
+          -webkit-border-radius: 1.4rem;
+          -moz-border-radius: 1.4rem;
+          border-radius: 1.4rem;
+          &:hover {
+            border: solid white;
+          }
         }
       }
     }
   }
+
+  @media screen and (max-width: 40em){
+    /*
+     * -- drill-down menu with red of theme mixed into dark red linear gradient.
+     */
+
+    text-align: center;
+    background: linear-gradient($themecolor, darkred);
+    ul{
+      background:transparent;
+      a{
+        color: white;
+      }
+    }
+  }
+
 
   .top-bar-right{
     padding-top: 1%;
@@ -169,6 +195,11 @@
         }
       }
       margin: auto;
+    }
+
+    @media screen and (min-width: 45em){
+      //anything bigger than mobile
+      margin-left: 10%;
     }
 
     margin-top: 10px;
