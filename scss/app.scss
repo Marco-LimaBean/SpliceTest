@@ -9,6 +9,9 @@
 @import "fonts";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+//images list
+@import "images_list";
+
 @include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
@@ -138,8 +141,7 @@
     //fixes flashing of menu bar on page load if screen doesn't require menubar
     display:none;
   }
-
-
+  
   background-color: darken($themecolor, 5%);
 
   .title-bar-title{
@@ -272,8 +274,9 @@
     }
     &:after { //note any changes will affect all partner icons
       font-family: 'fontello';
-      font-size: 1.2em;
-      dispay:block;
+      font-size: 20px;
+      display:block;
+      text-align: center;
       color: white;
       height: 37px;
       width: 37px;
@@ -349,14 +352,14 @@
    */
 
   //images that are default text with black on-hover
-  @each $image in '1Sports' '2Wellness' '4Games' '5Culture' '6Beauty' '7Travelling'{
+  @each $image in $holiday-black{
     #image-#{$image}{
       @include block-background('/assets/block#{$image}.jpg');
     }
   }
 
   //images that are default text with white on-hover
-  @each $image in '3Expeditions'{
+  @each $image in $holiday-white{
     #image-#{$image}{
       @include block-background('/assets/block#{$image}.jpg');
       &:hover{
