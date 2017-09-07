@@ -91,7 +91,7 @@
 @mixin block-background ($imgpath){
   background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
   background-size: cover;
-  
+
   &:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
     background: url($imgpath);
@@ -194,7 +194,8 @@
       a{
         color: white;
         &:hover{
-          color: $mobilehovercolor;
+          background: $mobilehovercolor;
+          color: darken($themecolor, 10);
         }
       }
     }
@@ -203,6 +204,7 @@
   //left side: Contains the site title
   .top-bar-left{
     margin-top: 10px;
+    margin-left: 15%;
     font-size: 1.5em;
     a:hover{
       border: solid transparent;
@@ -211,13 +213,12 @@
 
     @media screen and (max-width: 45em){
       //above for mobile screen
+      margin: auto;
       ul{
-        margin: auto;
         overflow: hidden;
         li{
           width: 100%;
           a:hover{
-            color: $mobilehovercolor;
             border: hidden;
           }
         }
