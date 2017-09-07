@@ -63,72 +63,87 @@
  * END OF FOUNDATION GENERATED
  */
 
-// mixin
 
+/*
+ * MENU
+ * 1. Mixin
+ * 2. Start of Page
+ * 3. Navigation
+ * 4. Partner
+ * 5. Categories - Holiday
+ * 6. Footer
+ * 7. General Classes
+ */
 
-@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+/*
+ *  1. Mixin
+ */
+@mixin background($imgpath,$position,$repeat) {
   background: {
     image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url($imgpath);
     position: $position;
     repeat: $repeat;
+    size: cover;
   }
-  background-size: cover;
+  display:block;
 }
 
 @mixin block-background ($imgpath){
   background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
   background-size: cover;
-
+  
   &:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
     background: url($imgpath);
     background-size: cover;
+    color:black;
   }
 }
+
+/*
+ * 2. Start of page
+ */
 
 .homehead {
-  @include background('/assets/headerBackground.jpg');
-}
-
-.theme-color{ //to change text to theme color
-  color: $themecolor;
-}
-
-.button{
-  &.redcurved {
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    border-color: $themecolor;
-    background-color:white;
-    color: $themecolor;
-    &.filled{
-      color:white;
-      background-color:$themecolor;
-    }
-  }
-  &.redcurved:hover{
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-  }
+  //loads image
+  @include background('/assets/headerBackgroundProgressive.jpg', center top, no-repeat);
 }
 
 .container-center {
+  //contains the "Share your dream" section
   padding-top: 25vh;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: auto;
   text-align: center;
   color:$white;
 }
 
+.main-home{
+  margin: auto;
+  padding-top: 4vh;
+}
+
+.fullpage{
+  min-height: 100vh;
+}
+
+/*
+ * 3. Navigation
+ */
+
 .title-bar{
 
   @media screen and (min-width: 45em){
-    //fixes flashing of menu bar on page load.
+    //fixes flashing of menu bar on page load if screen doesn't require menubar
     display:none;
   }
 
+
   background-color: darken($themecolor, 5%);
+
   .title-bar-title{
+    //to allow for the entire menu title-bar to be toggleable
     width:100%
   }
 }
@@ -136,6 +151,11 @@
 .top-bar{
 
   @media screen and (min-width: 40em) {
+    @media screen and (max-width: 66.95rem){
+      //stops menu links border from intersecting with the top of the page.
+      padding-top: 20px;
+    }
+    width: 100%;
     background: none;
     color: white;
     text-align: center;
@@ -173,55 +193,58 @@
       background:transparent;
       a{
         color: white;
-      }
-    }
-  }
-
-
-  .top-bar-right{
-    padding-top: 1%;
-    padding-right: 10%;
-    padding-left: 5%;
-  }
-
-  .top-bar-left{
-
-    @media screen and (max-width: 45em){
-      //above for mobile screen
-      ul{
-        margin: auto;
-        li{
-          width: 100%;
+        &:hover{
+          color: $mobilehovercolor;
         }
       }
-      margin: auto;
     }
+  }
 
-    @media screen and (min-width: 45em){
-      //anything bigger than mobile
-      margin-left: 10%;
-    }
-
+  //left side: Contains the site title
+  .top-bar-left{
     margin-top: 10px;
     font-size: 1.5em;
     a:hover{
       border: solid transparent;
       color: $themecolor;
     }
+
+    @media screen and (max-width: 45em){
+      //above for mobile screen
+      ul{
+        margin: auto;
+        overflow: hidden;
+        li{
+          width: 100%;
+          a:hover{
+            color: $mobilehovercolor;
+            border: hidden;
+          }
+        }
+      }
+    }
+  }
+
+  //contains the navigation links
+  .top-bar-right{
+    padding-top: 1%;
+    padding-right: 10%;
+    padding-left: 5%;
   }
 }
 
-.main-home{
-  margin: auto;
-  padding-top: 4vh;
-}
-
-.fullpage{
-  min-height: 100vh;
-}
+/*
+ * 4. Partner
+ */
 
 .partner-body{
   padding-top: 3vh;
+
+  @media screen and (max-width: 40em){
+    .panel{
+      padding: 0 3% 0;
+    }
+  }
 
   h5{
     font-weight: lighter;
@@ -249,6 +272,7 @@
     &:after { //note any changes will affect all partner icons
       font-family: 'fontello';
       font-size: 1.2em;
+      dispay:block;
       color: white;
       height: 37px;
       width: 37px;
@@ -280,6 +304,10 @@
     padding-top: 3vh;
   }
 }
+
+/*
+ * 5. Categories - Holiday
+ */
 
 .holiday{
   padding-top: 3vh;
@@ -314,32 +342,26 @@
     }
   }
 
-  #sports-image{
-    @include block-background('/assets/block1Sports.jpg');
+  /*
+   * Holiday category images
+   * technique based on: https://gist.github.com/jareware/4738651
+   */
+
+  //images that are default text with black on-hover
+  @each $image in '1Sports' '2Wellness' '4Games' '5Culture' '6Beauty' '7Travelling'{
+    #image-#{$image}{
+      @include block-background('/assets/block#{$image}.jpg');
+    }
   }
 
-  #wellnessandhealth-image{
-    @include block-background('/assets/block2Wellness.jpg');
-  }
-
-  #expeditions-image{
-    @include block-background('/assets/block3Expeditions.jpg');
-  }
-
-  #games-image {
-    @include block-background('/assets/block4Games.jpg');
-  }
-
-  #culureandeducation-image{
-    @include block-background('/assets/block5Culture.jpg');
-  }
-
-  #beautyandrelaxation-image{
-    @include block-background('/assets/block6Beauty.jpg');
-  }
-
-  #travelling-image{
-    @include block-background('/assets/block7Travelling.jpg');
+  //images that are default text with white on-hover
+  @each $image in '3Expeditions'{
+    #image-#{$image}{
+      @include block-background('/assets/block#{$image}.jpg');
+      &:hover{
+        color:white;
+      }
+    }
   }
 
   .small-4{
@@ -351,40 +373,66 @@
   }
 }
 
-footer{
+/*
+ * 6. Footer
+ */
+
+.footer-item{
 
   .row{
-    padding-top: 1em;
+    margin-top: 0.1em;
   }
 
-  .separator-red{
-    width:100vw;
-    background: $themecolor;
-    height: 2px;
-    border-style: solid;
+  color: #C2C2C2;
+  font-weight: lighter;
+
+  h5{
+    color: black;
+    font-weight: bold;
   }
 
-  .footer-item{
-    color: #C2C2C2;
-    font-weight: lighter;
-
-    h5{
-      color: black;
-      font-weight: bold;
-    }
-
-    .text-theme{
+  .text-theme{
+    color: $themecolor;
+    a{
       color: $themecolor;
-      a{
-        color: $themecolor;
-      }
-    }
-
-    a {
-      color: $grey;
-      &:hover{
-        color: $themecolor;
-      }
     }
   }
+  a {
+    color: $grey;
+    &:hover{
+      color: $themecolor;
+    }
+  }
+}
+
+/*
+ * 7. General Classes
+ */
+
+.border-top{
+  border-top: solid $themecolor;
+}
+
+.button{
+  &.redcurved {
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    border-color: $themecolor;
+    border-width: 2px;
+    background-color:white;
+    color: $themecolor;
+    &.filled{
+      color:white;
+      background-color:$themecolor;
+    }
+  }
+  &.redcurved:hover{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+}
+
+.theme-color{ //to change text to theme color
+  color: $themecolor;
 }
