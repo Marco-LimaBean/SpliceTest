@@ -3,12 +3,9 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-
-
 // Font icons
 @import "fonts";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 //images list
 @import "images_list";
 
@@ -66,7 +63,6 @@
  * END OF FOUNDATION GENERATED
  */
 
-
 /*
  * MENU
  * 1. Mixin
@@ -88,18 +84,17 @@
     repeat: $repeat;
     size: cover;
   }
-  display:block;
 }
 
-@mixin block-background ($imgpath){
+@mixin partner-background($imgpath) {
   background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
   background-size: cover;
-
-  &:hover{
+  
+  &:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.3)), url($imgpath); //darken overlay.
     background: url($imgpath);
     background-size: cover;
-    color:black;
+    color: black;
   }
 }
 
@@ -119,15 +114,19 @@
   padding-right: 5%;
   margin: auto;
   text-align: center;
-  color:$white;
+  color: $white;
+  
+  .subheading {
+    font-family: "Arial Narrow", serif;
+  }
 }
 
-.main-home{
+.main-home {
   margin: auto;
   padding-top: 4vh;
 }
 
-.fullpage{
+.fullpage {
   min-height: 100vh;
 }
 
@@ -135,46 +134,66 @@
  * 3. Navigation
  */
 
-.title-bar{
-
-  @media screen and (min-width: 45em){
+.title-bar {
+  
+  @include breakpoint(medium up) {
     //fixes flashing of menu bar on page load if screen doesn't require menubar
-    display:none;
+    display: none;
   }
   
   background-color: darken($themecolor, 5%);
-
-  .title-bar-title{
+  
+  .title-bar-title {
     //to allow for the entire menu title-bar to be toggleable
-    width:100%
+    width: 100%
   }
 }
 
-.top-bar{
-
-  @media screen and (min-width: 40em) {
-    @media screen and (max-width: 66.95rem){
+.top-bar {
+  
+  background: transparent;
+  text-align: center;
+  
+  ul {
+    background: transparent;
+    a {
+      color: $topbar-link-color;
+    }
+  }
+  
+  @include breakpoint(small only) {
+    /*
+     * -- drill-down menu with red of theme mixed into dark red linear gradient.
+     */
+    width: 100%;
+    position: absolute; //stops it from pushing down the rest of the page.
+    background: linear-gradient($themecolor, darkred);
+    ul {
+      background: transparent;
+      a {
+        border: solid transparent;
+        &:hover {
+          background: white;
+          color: $themecolor;
+        }
+      }
+    }
+  }
+  
+  @include breakpoint(medium up) {
+    @media screen and (max-width: 66.95rem) {
       //stops menu links border from intersecting with the top of the page.
       padding-top: 20px;
     }
     width: 100%;
-    background: none;
-    color: white;
-    text-align: center;
     ul {
-      background: none;
-      color: white;
       li {
-        height: 2.5em;
+        height: 2.5rem;
         a {
           display: inline;
-          background: none;
-          color: $topbar-link-color;
-
+          
           border: solid transparent;
           padding: 0.4rem;
-          -webkit-border-radius: 1.4rem;
-          -moz-border-radius: 1.4rem;
           border-radius: 1.4rem;
           &:hover {
             border: solid white;
@@ -183,132 +202,121 @@
       }
     }
   }
-
-  @media screen and (max-width: 40em){
-    /*
-     * -- drill-down menu with red of theme mixed into dark red linear gradient.
-     */
-
-    text-align: center;
-    background: linear-gradient($themecolor, darkred);
-    ul{
-      background:transparent;
-      a{
-        color: white;
-        &:hover{
-          background: $mobilehovercolor;
-          color: darken($themecolor, 10);
-        }
-      }
-    }
-    
-    //menu transition
-    //$duration: 0.1s;
-  }
-
+  
   //left side: Contains the site title
-  .top-bar-left{
+  .top-bar-left {
     margin-top: 10px;
     margin-left: 15%;
     font-size: 1.5em;
-    a:hover{
-      border: solid transparent;
-      color: $themecolor;
-    }
-
-    @media screen and (max-width: 45em){
+    
+    @include breakpoint(small only) {
       //above for mobile screen
       margin: auto;
-      ul{
+      ul {
         overflow: hidden;
-        li{
+        li {
           width: 100%;
-          a:hover{
-            border: hidden;
+          a:hover {
+            border: solid transparent;
           }
         }
       }
     }
+    
+    @include breakpoint(medium up) {
+      a:hover {
+        border: solid transparent;
+        color: $themecolor;
+      }
+    }
   }
-
+  
   //contains the navigation links
-  .top-bar-right{
+  .top-bar-right {
     padding-top: 1%;
     padding-right: 10%;
     padding-left: 5%;
+    
+    @include breakpoint(small) {
+      //last child 0px margin downwards
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
+  
 }
 
 /*
  * 4. Partner
  */
 
-.partner-body{
-  padding-top: 3vh;
-
-  @media screen and (max-width: 40em){
-    .panel{
+.partner-body {
+  padding-top: 2rem;
+  
+  @include breakpoint(small only) {
+    .panel {
       padding: 0 3% 0;
     }
   }
-
-  h5{
+  
+  h5 {
     font-weight: lighter;
     color: lightgray;
   }
-
+  
   p {
-    color:$grey;
+    color: $grey;
   }
-
-  .partner-mainheading{
-    padding-bottom: 3vh;
+  
+  .partner-mainheading {
+    padding-bottom: 2rem;
   }
-
-  .partner-image{
+  
+  .partner-image {
     position: relative;
     display: inline-block;
-    img{
+    img {
       background-size: auto;
-      height: 122px;
-      width: 122px;
+      height: rem-calc(122);
+      width: rem-calc(122);
       margin: auto;
-      border-radius: 64px 64px 64px 64px;
+      border-radius: 50%;
     }
     &:after { //note any changes will affect all partner icons
       font-family: 'fontello';
-      font-size: 20px;
-      display:block;
+      font-size: rem-calc(20);
+      display: block;
       text-align: center;
       color: white;
-      height: 37px;
-      width: 37px;
+      height: rem-calc(37);
+      width: rem-calc(37);
       position: absolute;
       bottom: 0%;
       right: 0%;
-      border-radius: 18px;
+      border-radius: rem-calc(18);
       border: 3px solid white;
     }
     &.art:after {
-        content: '\e800'; //find all codes in css/fontello.css end.
-        background-color: $green;
+      content: '\e800'; //find all codes in css/fontello.css end.
+      background-color: $green;
     }
-    &.photography:after{
-        content: '\e801';
-        background-color: $orange;
+    &.photography:after {
+      content: '\e801';
+      background-color: $orange;
     }
     &.music:after {
-        content: '\e802';
-        background-color: $themecolor;
+      content: '\e802';
+      background-color: $themecolor;
     }
-    &.travel:after{
-        content: '\e803';
-        background-color: $purple;
+    &.travel:after {
+      content: '\e803';
+      background-color: $purple;
     }
   }
-
-  .partner-footer{
-    padding-top: 3vh;
+  
+  footer {
+    padding-top: 1rem;
   }
 }
 
@@ -316,67 +324,60 @@
  * 5. Categories - Holiday
  */
 
-.holiday{
-  padding-top: 3vh;
-
-  .columns{
-    padding: 10px;
+.holiday {
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  
+  .columns {
+    padding: 0.8rem;
   }
-
-  h3{
+  
+  h3 {
     text-align: center;
-    padding-bottom:2vh;
+    padding-bottom: 1rem;
   }
-
-  h4{
+  
+  h4 {
     font-weight: bold;
   }
-
-  img{
+  
+  img {
     fill: 100%;
   }
-
+  
   .holiday-image {
     background-position: center top;
     width: 100%;
-    height: 350px;
+    height: rem-calc(350);
     color: black;
     text-align: center;
-    border-radius: 5px 5px 5px 5px;
-
+    border-radius: 2%;
+    
     &.white-text {
       color: white;
     }
   }
-
+  
   /*
    * Holiday category images
    * technique based on: https://gist.github.com/jareware/4738651
    */
-
+  
   //images that are default text with black on-hover
-  @each $image in $holiday-black{
-    #image-#{$image}{
-      @include block-background('/assets/block#{$image}.jpg');
+  @each $image in $holiday-black {
+    #image-#{$image} {
+      @include partner-background('/assets/block#{$image}.jpg');
     }
   }
-
+  
   //images that are default text with white on-hover
-  @each $image in $holiday-white{
-    #image-#{$image}{
-      @include block-background('/assets/block#{$image}.jpg');
-      &:hover{
-        color:white;
+  @each $image in $holiday-white {
+    #image-#{$image} {
+      @include partner-background('/assets/block#{$image}.jpg');
+      &:hover {
+        color: white;
       }
     }
-  }
-
-  .small-4{
-    padding: 1vh;
-  }
-
-  .small-8{
-    padding: 1vh;
   }
 }
 
@@ -384,29 +385,29 @@
  * 6. Footer
  */
 
-.footer-item{
-
-  .row{
-    margin-top: 0.1em;
-  }
-
+.footer-item {
+  padding-top: 1.5rem;
   color: #C2C2C2;
   font-weight: lighter;
-
-  h5{
+  
+  .row-margin {
+    margin-top: 0.1rem;
+  }
+  
+  h5 {
     color: black;
     font-weight: bold;
   }
-
-  .text-theme{
+  
+  .text-theme {
     color: $themecolor;
-    a{
+    a {
       color: $themecolor;
     }
   }
   a {
     color: $grey;
-    &:hover{
+    &:hover {
       color: $themecolor;
     }
   }
@@ -416,30 +417,38 @@
  * 7. General Classes
  */
 
-.border-top{
+.border-top {
   border-top: solid $themecolor;
 }
 
-.button{
+.button {
   &.redcurved {
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
     border-radius: 35px;
     border-color: $themecolor;
     border-width: 2px;
-    background-color:white;
+    background-color: white;
     color: $themecolor;
-    &.filled{
-      color:white;
-      background-color:$themecolor;
+    &.filled {
+      color: white;
+      background-color: $themecolor;
     }
   }
-  &.redcurved:hover{
-    -webkit-filter: invert(100%);
+  &.redcurved:hover {
     filter: invert(100%);
+  }
+  
+  &.holiday-image {
+    border: none;
+    display: inline-block;
+    padding-top: rem-calc(170);
+    //align-items: center;
+    //display: inline-block;
+    h4:after {
+      vertical-align: middle;
+    }
   }
 }
 
-.theme-color{ //to change text to theme color
+.theme-color { //to change text to theme color
   color: $themecolor;
 }
