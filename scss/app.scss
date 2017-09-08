@@ -116,9 +116,6 @@
   text-align: center;
   color: $white;
   
-  .subheading {
-    font-family: "Arial Narrow", serif;
-  }
 }
 
 .main-home {
@@ -196,7 +193,7 @@
           padding: 0.4rem;
           border-radius: 1.4rem;
           &:hover {
-            border: solid white;
+            color: $themecolor;
           }
         }
       }
@@ -241,6 +238,13 @@
       //last child 0px margin downwards
       li:last-child {
         margin-bottom: 0;
+      }
+    }
+    
+    @include breakpoint (medium up){
+      #sign-up {
+        border: solid white;
+        border: 50%;
       }
     }
   }
@@ -369,16 +373,7 @@
       @include partner-background('/assets/block#{$image}.jpg');
     }
   }
-  
-  //images that are default text with white on-hover
-  @each $image in $holiday-white {
-    #image-#{$image} {
-      @include partner-background('/assets/block#{$image}.jpg');
-      &:hover {
-        color: white;
-      }
-    }
-  }
+
 }
 
 /*
@@ -389,6 +384,10 @@
   padding-top: 1.5rem;
   color: #C2C2C2;
   font-weight: lighter;
+  
+  .footer-title{
+    font-size: 1.2em;
+  }
   
   .row-margin {
     margin-top: 0.1rem;
